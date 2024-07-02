@@ -35,24 +35,25 @@ function render(variables = {}) {
           <img src="${
             variables.avatarURL === null ? "Avatar" : variables.avatarURL
           }" class="photo" />
-          <h1>${variables.name === null ? "Name" : variables.name}           ${
-    variables.lastName === null ? "Last Name" : variables.lastName
-  }
-</h1>
+          <h1>
+            ${variables.name === null ? "Name" : variables.name}           
+            ${variables.lastName === null ? "Last Name" : variables.lastName}
+          </h1>
           <h2>${variables.role === null ? "Role" : variables.role}</h2>
           <h3>${variables.city === null ? "City" : variables.city}</h3>
-          <ul class="position-right">
-            <li><a href="${
-              variables.twitter === null ? "" : variables.twitter
+          <h4>${variables.country === null ? "Country" : variables.country}</h4>
+          <ul class="position-left">
+            <li><a href="https://www.twitter.com/${
+              variables.twitter
             }"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="${
-              variables.github === null ? "" : variables.github
+            <li><a href="https://www.github.com/${
+              variables.github
             }"><i class="fab fa-github"></i></a></li>
-            <li><a href="${
-              variables.linkedin === null ? "" : variables.linkedin
+            <li><a href="https://www.linkedin.com/${
+              variables.linkedin
             }"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="${
-              variables.instagram === null ? "" : variables.instagram
+            <li><a href="https://www.instagram.com/${
+              variables.instagram
             }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
